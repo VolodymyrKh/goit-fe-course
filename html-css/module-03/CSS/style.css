@@ -32,12 +32,13 @@ body {
 
 .site-navigation{
  display: inline-block; 
- width: 900px;  
+ /*width: 900px;*/  
  list-style: none;
  margin: 0;
  padding: 0;
+ font-size: 0;
  /*background-color: aquamarine;*/
- text-align: center;
+ /*text-align: center;*/
 }
 
 .site-navigation li{
@@ -58,16 +59,20 @@ body {
 
 
 .site-navigation a{
+ display: block; 
  text-transform: uppercase;
  text-decoration: none;
  color: #626262;
+ font-size: 14px;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus{
  color: #03a9f4;
 }  
-
+.page-section{
+  margin-bottom: 70px;
+}
 .page-section-list{
   list-style: none; 
   margin: 0;
@@ -96,6 +101,7 @@ body {
   line-height: 17px; 
   color: #b4ad9e;
   font-size: 14px;
+  margin: 20px 0 24px;
 }
 
 .page-section-list-item p{
@@ -106,19 +112,31 @@ body {
   font-size: 30px; 
   font-weight: 400;
   line-height: 36px; 
+  margin: 0 0 32px;  
+}
+
+.article-title + p{
+  margin: 0;
 }
 
 .page-section-list{
   margin-bottom: 40px;  
 }
 
-.load_button{   
-   text-align: center;
-   margin-bottom: 70px;
+.load_button{  
+  display: block; 
+  color: #626262;
+  border: 1px solid #626262;
+  padding: 20px 34px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
   
 }
 
-button{
+/*button{
     color: #626262;
     border: 1px solid #626262;
     padding: 20px 34px;
@@ -127,4 +145,4 @@ button{
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
-}
+}*/
