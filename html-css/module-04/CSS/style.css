@@ -23,8 +23,7 @@ img{
 }
 
 .site-logo{
-    display: inline-block;
-    width: 90px;
+    display: inline-block;    
     } 
 
 .site-logo::first-letter{
