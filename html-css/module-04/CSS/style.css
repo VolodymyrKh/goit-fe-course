@@ -21,11 +21,23 @@ img{
     content:'';
     clear:both;
 }
-
+/* 
 .site-logo{
     display: inline-block;
     width: 90px;
-    } 
+    }  */
+
+.site-logo{
+ display: inline-block;
+ font-family: 'Roboto', sans-serif;
+ font-size: 30px;
+ color: #555252;
+ font-weight: 300;
+ text-transform: uppercase;
+ text-decoration: none;
+ line-height: 32px;
+ width: 90px;
+ }
 
 .site-logo::first-letter{
     font-weight: 900;
@@ -101,15 +113,6 @@ img{
   margin-right: 34px;
 } */
 
-.site-logo{
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  color: #555252;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 32px;
-}
 
 h2{
   font-family: 'Roboto', sans-serif; 
