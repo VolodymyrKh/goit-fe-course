@@ -1,0 +1,326 @@
+html {
+  box-sizing: border-box;   
+}
+    
+*, *::before, *::after{
+  box-sizing: inherit;
+}    
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}  
+ 
+.wrapper, .section-background{
+  width: 940px;
+  margin: 0 auto;
+}
+ 
+h2, h3, p{
+  margin: 0;
+  padding: 0;
+}
+ /* montserrat-600 */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../Fonts/Montserat/montserrat-v14-latin-600.woff2') format('woff2'), 
+       url('../Fonts/Montserat/montserrat-v14-latin-600.woff') format('woff'); 
+}
+/* montserrat-800 */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../Fonts/Montserat/montserrat-v14-latin-800.woff2') format('woff2'), 
+       url('../Fonts/Montserat/montserrat-v14-latin-800.woff') format('woff'); 
+}
+
+/* roboto-slab-regular */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../Fonts/Roboto_Slab/roboto-slab-v9-latin-regular.woff2') format('woff2'),
+       url('../Fonts/Roboto_Slab/roboto-slab-v9-latin-regular.woff') format('woff'); 
+
+}
+/* petit-formal-script-regular */
+@font-face {
+  font-family: 'Petit Formal Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../Fonts/Petit_script/petit-formal-script-v7-latin-regular.woff2') format('woff2'), 
+       url('../Fonts/Petit_script/petit-formal-script-v7-latin-regular.woff') format('woff'); 
+}
+
+/* taviraj-italic */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../Fonts/Taviraj/taviraj-v5-latin-italic.woff2') format('woff2'),
+       url('../Fonts/Taviraj/taviraj-v5-latin-italic.woff') format('woff');
+}
+
+/*Header*/
+
+.page-header{
+  margin-bottom: 64px;   
+ }
+ 
+ .page-navigation{
+  display: flex;
+  min-height: 124px;
+  align-items: center;
+  justify-content: space-between;
+ }
+ 
+ .site-logo{
+  display: block;
+  font-family: 'Petit Formal Script';
+  font-size: 26px;
+  color: #fed136;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 41px;
+  transition: transform 0.2s linear;
+ }
+ 
+ .site-logo:hover,
+ .site-logo:focus{
+  transform: scale(1.3);
+  outline: 0;
+ }
+ 
+ .site-navigation{
+  display: flex;
+  flex: 0 0 484px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;   
+ }
+ 
+ .site-navigation a{
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;  
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 16px;   
+  color: #222222;
+  transition: color .2s linear;
+ }
+ 
+ .site-navigation a:hover,
+ .site-navigation a:focus{
+  color: #fed136;
+  outline: 0;
+  }
+
+  /*Section Services */
+
+.services{
+  margin-bottom: 120px;
+}  
+
+.section-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px; 
+ }
+
+ .services-title h2{
+  color: #222222;
+ }
+
+ .title-descr{
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 19px;
+  color: #777777;
+}
+
+.services-title{
+  text-align: center;  
+  margin-bottom: 50px;
+ }
+
+.services-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}  
+
+.services-list-item{
+ flex: 0 0 290px;
+ position: relative;
+ padding-top: 122px;
+ text-align: center;
+}
+
+.services-list-item:nth-last-child(-n+3){
+  margin-bottom: 0;
+}
+
+.s-l-i-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #222222
+}
+
+.s-l-i-descr{
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+
+.services-list-item::before{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  top: 28px;
+  left:108px; 
+  background-position: center;
+  
+}
+
+.services-list-item:nth-child(1)::before{
+  background-image: url(../IMG/Icons-services/Icon-Basket.svg), url(../IMG/Icons-services/Circle-1.svg);
+}
+.services-list-item:nth-child(2)::before{
+  background-image: url(../IMG/Icons-services/Icon-Laptop.svg), url(../IMG/Icons-services/Circle-1.svg);
+}
+.services-list-item:nth-child(3)::before{
+  background-image: url(../IMG/Icons-services/Icon-Locked.svg), url(../IMG/Icons-services/Circle-1.svg);
+}
+
+/* Section Contact*/
+
+.section-background{
+  width: 1400px;
+  padding-top: 105px;
+  padding-bottom: 115px;
+  background-color: #222222;
+  background-image: url(../IMG/Map_Image.png);
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+}
+
+.contact-title h2{
+  color: #fff;
+}
+
+.contact-title {
+ text-align: center;  
+ margin-bottom: 74px;
+}
+
+.contact-form{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  }
+
+.user-interaction{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  }  
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  text-transform: uppercase;
+  color: #bbb;
+  padding-left: 20px;
+}
+
+.contact-form textarea::placeholder{
+padding-top: 18px;
+}
+
+.contact-form-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-f-l-item{
+  width: 100%;
+}
+
+.c-f-l-item:not(:last-child){
+  margin-bottom: 26px;  
+}
+
+.contact-form input,
+.contact-form textarea{
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 0;
+  width: 456px;
+}
+
+.contact-form input{
+  height: 52px;
+}
+
+.contact-form input[required]:valid,
+.contact-form textarea:valid{
+  outline: 2px solid green;
+}
+
+.contact-form input[required]:invalid,
+.contact-form textarea:invalid{
+  outline: 2px solid #ff0000;
+}
+
+textarea[name="user_message"]{
+  resize: none;
+}
+
+.contact-button{
+  display: block;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #fed136;
+  border-radius: 3px;
+  padding: 22px 44px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s linear;
+  margin: 0 auto; 
+}
+
+.contact-button:hover,
+.contact-button:focus{
+ outline: 0;
+ color: #da4b4b;
+}
+
+
