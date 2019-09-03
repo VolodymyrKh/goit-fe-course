@@ -218,7 +218,7 @@ h2, h3, p{
 
 /* Section Contact*/
 
-.section-background{
+/* .section-background{
   width: 1400px;
   padding-top: 105px;
   padding-bottom: 115px;
@@ -226,6 +226,16 @@ h2, h3, p{
   background-image: url(../IMG/Map_Image.png);
   background-repeat: no-repeat;
   background-position: 100% 80%;
+} */
+
+.contact{
+  padding-top: 105px;
+  padding-bottom: 115px;
+  background-color: #222222;
+  background-image: url(../IMG/Map_Image.png);
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+
 }
 
 .contact-title h2{
@@ -238,6 +248,9 @@ h2, h3, p{
 }
 
 .contact-form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -315,6 +328,7 @@ textarea[name="user_message"]{
   cursor: pointer;
   transition: color 0.2s linear;
   margin: 0 auto; 
+  margin-top: 28px;
 }
 
 .contact-button:hover,
