@@ -123,7 +123,7 @@
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 960px){
   .page-header{
     /* background-image: url(../IMG/Header_BG_Image.png), url(../IMG/Overlay_desktop.png); */
     padding-top: 46px;
