@@ -1,0 +1,159 @@
+@media (max-width: 767px){
+.page-header{
+ /* background-image: url(../IMG/Header_BG_Image_Mobile.png);    */
+ padding-top: 16px;
+ padding-bottom: 132px;
+ }
+
+ .site-navigation{
+ margin: 0 auto;  
+ margin-bottom: 104px;
+ } 
+
+ .site-logo{
+ width: 210px;  
+ margin: 0 auto;  
+ }
+
+ .page-navigation{
+ margin-bottom: 20px;
+ }
+
+ .page-offer-container{
+ margin: 0 auto;
+ margin-bottom: 14px;
+ }
+
+ .page-title{
+ font-size: 30px;   
+ margin-bottom: 12px;
+ }
+
+  h2 + .descr{
+    padding: 0 20px;
+  }
+ .section-title{
+ padding: 0 24px;
+ margin-bottom: 16px;
+ }
+
+ .partner{
+ width: 280px;
+ } 
+
+ .partner-list{
+  margin-bottom: 28px;
+ }
+
+ .partner-list-item:not(:last-child){
+  margin-bottom: 24px;  
+ }
+
+ .partners{
+ margin-bottom: 56px;
+ }
+}
+
+@media (min-width: 768px){
+  .page-header{
+   /* background-image: url(../IMG/Header_BG_Image_Tablet.png), url(../IMG/Overlay_tablet.png); */
+   padding-top: 26px;
+   padding-bottom: 228px;  
+   margin-bottom: 72px; 
+  }
+
+  .wrapper{
+    width: 680px;
+  }
+
+  .page-navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  .site-navigation{order: 1;}
+
+  .page-offer-container{
+    margin-bottom: 30px;
+    padding: 0 84px;
+  }
+  
+  .page-title{
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+  
+   h2 + .descr{
+     font-size: 24px;
+   }
+
+  .section-title{
+    margin-bottom: 32px;
+  }
+  .find-partner{
+    width: 226px;
+  }
+  .other-partners{
+    width: 194px;
+  } 
+
+  .partner-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 102px;
+    margin-bottom: 62px;
+  }
+
+  .partner-list-item{
+    flex: 0 0 220px; 
+    margin: 0;
+  }
+    
+  .partner-list-item:nth-child(4){order: 3;}
+  .partner-list-item:nth-child(2){order: 2;}
+
+  .partner-list-item:not(:nth-child(2n)){
+    margin-bottom: 36px;
+  }
+  
+  .partners{
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1440px){
+  .page-header{
+    /* background-image: url(../IMG/Header_BG_Image.png), url(../IMG/Overlay_desktop.png); */
+    padding-top: 46px;
+    padding-bottom: 234px;  
+    margin-bottom: 70px; 
+  }
+  
+  .wrapper{
+    width: 942px;
+  }
+ 
+  .page-offer-container{
+    padding: 0 150px;
+  }
+  .section-title{
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .partner-list{
+    padding: 0;
+    margin-bottom: 36px;
+  }
+
+  .partner-list-item:nth-child(-n+4){
+    margin-bottom: 0;
+  }
+
+  .partner{
+    margin-bottom: 72px;
+  }
+}
+

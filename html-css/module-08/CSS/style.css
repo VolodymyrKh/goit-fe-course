@@ -1,0 +1,178 @@
+html {
+ box-sizing: border-box;   
+}
+      
+*, *::before, *::after{
+  box-sizing: inherit;
+}    
+  
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}  
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  color: #000;
+  font-size: 14px;
+  line-height: 1.2; 
+  font-weight: 700;  
+}
+
+.descr{
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+ font-size: 18px;
+}
+
+p, h2, h3{
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+
+.wrapper{
+ margin: 0 auto;
+ width: 320px;
+ 
+
+}
+
+/*Header*/
+
+.page-header{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../IMG/Header_BG_Image.png), url(../IMG/Overlay_desktop.png);
+  color: #fff;
+  margin-bottom: 68px;
+}
+
+.site-navigation{
+ display: flex;
+ justify-content: space-between;
+ width: 174px;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+.site-navigation a,
+.site-logo{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 26px;
+  transition: border-color .2s linear;
+ }
+
+.site-logo{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-logo:hover,
+.site-logo:focus{
+ border: 2px solid #fff;
+ outline: 0;
+}
+
+.page-title{
+  text-transform: uppercase;
+}
+
+.partner{
+ display: block; 
+ text-decoration: none;
+ border-radius: 44px;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 12px;
+ padding-bottom: 12px;
+}
+
+.find-partner{
+ color: #fff;
+ border: 2px solid transparent;
+ background-color: #ff4e50;
+ transition: border-color .2s linear, background-color .2s linear, color 0.2s linear;
+}
+
+.other-partners{
+ color: #ff4e50;
+ border: 2px solid #ff4e50;
+ transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.find-partner:hover,
+.find-partner:focus{
+ color: #ff4e50;
+ background-color: #fff;
+ border: 2px solid #ff4e50;
+ outline: 0;
+}
+
+.other-partners:hover,
+.other-partners:focus{
+  background-color: #ff4e50;
+  color: #fff;
+  outline: 0;
+}
+
+/*Section Holiday Partners*/
+
+.partner-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.partner-list-item{
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+}
+.partner-list-item::before{
+ display: block;
+ content: "";
+ width: 40px;
+ height: 40px;
+ background-repeat: no-repeat;
+ background-position: center;
+ position: absolute;
+ top: 85px;
+ right: 45px; 
+}
+
+.partner-list-item:nth-child(1)::before{
+  background-image: url(../IMG/Icons/TV-Icon.svg), url(../IMG/Icons/TV-Icon-BG.svg);
+}
+.partner-list-item:nth-child(2)::before{
+  background-image: url(../IMG/Icons/Flask-Icon.svg), url(../IMG/Icons/Flask-Icon-BG.svg);
+}
+.partner-list-item:nth-child(3)::before{
+  background-image: url(../IMG/Icons/Coffee-Icon.svg), url(../IMG/Icons/Coffee-Icon-BG.svg);
+}
+.partner-list-item:nth-child(4)::before{
+  background-image: url(../IMG/Icons/Telegram-Icon.svg), url(../IMG/Icons/Telegram-Icon-BG.svg);
+}
+
+.partner-img{
+  margin-bottom: 20px;
+}
+
+.partner-name{
+  margin-bottom: 16px;
+}
+
+.about-partner{
+  font-size: 14px;
+}
