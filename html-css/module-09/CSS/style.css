@@ -1,0 +1,291 @@
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }  
+   
+  body {
+    font-family: 'Montserrat', sans-serif; 
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2; 
+    font-weight: 700;  
+  }
+   
+  .descr{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+  }
+   
+  p, h2, h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+   
+       
+     
+   /*Header*/
+   
+  .bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../IMG/Header_BG_Image.png), url(../IMG/Overlay_desktop.png);
+    color: #fff;
+  }
+   
+  .site-navigation{
+    display: flex;
+    width: 174px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+   
+  .site-navigation a,
+  .site-logo{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 26px;
+    transition: border-color .2s linear;
+  }
+   
+  .site-logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 210px;
+    margin: 0 auto;
+  }
+   
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .site-logo:hover,
+  .site-logo:focus{
+    border: 2px solid #fff;
+    outline: 0;
+  }
+   
+  .page-title{
+    text-transform: uppercase;
+  }
+   
+  .partner{
+    display: block; 
+    text-decoration: none;
+    border-radius: 44px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+   
+  .find-partner{
+    color: #fff;
+    border: 2px solid transparent;
+    background-color: #ff4e50;
+    transition: border-color .2s linear, background-color .2s linear, color 0.2s linear;
+  }
+   
+  .other-partners{
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    transition: background-color 0.2s linear, color 0.2s linear;
+  }
+   
+  .find-partner:hover,
+  .find-partner:focus{
+    color: #ff4e50;
+    background-color: #fff;
+    border: 2px solid #ff4e50;
+    outline: 0;
+  }
+   
+  .other-partners:hover,
+  .other-partners:focus{
+     background-color: #ff4e50;
+     color: #fff;
+     outline: 0;
+  }
+   
+   /*Section Holiday Partners*/
+   
+    
+  .partner-card{
+    position: relative;
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .tv::before,
+  .flask::before,
+  .coffee::before,
+  .telegram::before{
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 85px;
+    right: 45px; 
+  }
+   
+  .tv::before{
+    background-image: url(../IMG/Icons/TV-Icon.svg), url(../IMG/Icons/TV-Icon-BG.svg);
+  }
+  .flask::before{
+    background-image: url(../IMG/Icons/Flask-Icon.svg), url(../IMG/Icons/Flask-Icon-BG.svg);
+  }
+  .coffee::before{
+    background-image: url(../IMG/Icons/Coffee-Icon.svg), url(../IMG/Icons/Coffee-Icon-BG.svg);
+  }
+  .telegram::before{
+    background-image: url(../IMG/Icons/Telegram-Icon.svg), url(../IMG/Icons/Telegram-Icon-BG.svg);
+  }
+   
+  .partner-img{
+    margin-bottom: 20px;
+  }
+   
+  .partner-name{
+    margin-bottom: 16px;
+  }
+   
+  .about-partner{
+    font-size: 14px;
+  }
+    
+
+  @media (max-width: 767px){
+    .container {
+      max-width: 320px;
+    }
+          
+    .pt-header{
+      padding-top: 16px;   
+    }
+    .pb-header{
+      padding-bottom: 132px;   
+    }
+
+    .mb-header{
+      margin-bottom: 68px;
+    }
+     
+    .mb-site_nav{
+      margin-bottom: 104px;
+    }
+
+    .mb-nav{
+     margin-bottom: 20px; 
+    }
+
+    .mb-page_title{
+      margin-bottom: 12px;   
+    }
+
+    .mb-descr{
+      margin-bottom: 14px;
+    }
+     
+    .mb-section_title{
+      margin-bottom: 16px;
+    }
+      
+    .mb-partners{
+      margin-bottom: 28px;
+    }
+
+    .mb-section{
+      margin-bottom: 56px;
+    }
+
+    .partner-cards [class*="col-"]:not(:last-child){
+      margin-bottom: 20px;
+    }
+
+  }
+
+  @media (min-width: 768px){
+    .container{
+     max-width: 748px;
+    } 
+     .pt-header{
+      padding-top: 26px;   
+    }
+    .pb-header{
+      padding-bottom: 228px;   
+    }
+    .mb-header{
+      margin-bottom: 72px;
+    }
+    .mb-nav{
+      margin-bottom: 150px;
+    }
+    .page-title{
+      font-size: 52px;
+    }
+
+    .mb-page_title{
+      margin-bottom: 32px;   
+    }
+
+    .mb-descr{
+      margin-bottom: 30px;
+    }
+     
+    .mb-section_title{
+      margin-bottom: 32px;
+    }
+    .find-partner{
+      width: 226px;  
+    }
+      
+    .mb-partners{
+      margin-bottom: 62px;
+    }
+      
+    .mb-section{
+      margin-bottom: 40px;
+    }
+      
+  }
+    
+  @media (min-width: 768px) and (max-width: 960px){
+      .p-section{
+        padding: 0 110px;
+      }
+      .partner-cards [class*="col-"]:not(:nth-last-child(-n+2)){
+        margin-bottom: 36px;
+      }
+  }
+
+  @media (min-width: 960px){
+    .container{
+      max-width: 940px;  
+    }
+    .pt-header{
+      padding-top: 46px;   
+    }
+    .pb-header{
+      padding-bottom: 234px;   
+    }
+    .mb-header{
+      margin-bottom: 70px;
+    }
+    .mb-partners{
+     margin-bottom: 28px;
+    }
+    .find-partner{
+      width: 273px;
+    }
+  }
+
+    
