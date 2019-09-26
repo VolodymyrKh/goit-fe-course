@@ -1,0 +1,97 @@
+ 
+.service-title{
+  margin-bottom: 64px;   
+}
+  
+.services__item{
+  flex: 0 0 380px;
+  margin-bottom: 100px;
+  padding-left: 80px;
+  position: relative;
+
+  &:nth-last-child(-n+3){
+    margin-bottom: 0;
+  }
+}
+
+.services__icon{
+  &::before{
+    @include pseudo($display: block);
+    width: 80px;
+    height: 32px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    left: 0;
+    top: 0;
+  }
+
+  &--alarm::before{
+    background-image: url(images/ALARM.png);
+  
+    @media(min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(images/ALARM@2x.png);  
+    }
+  }
+
+  &--graph::before{
+    background-image: url(images/LINE_GRAPH.png);
+  
+    @media(min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(images/LINE_GRAPH@2x.png);  
+    }
+  }
+
+  &--computer::before{
+    background-image: url(images/COMPUTER.png);
+  
+    @media(min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(images/COMPUTER@2x.png);  
+    }
+  }
+
+  &--book::before{
+    background-image: url(images/BOOK.png);
+  
+    @media(min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(images/BOOK@2x.png);  
+    }
+  }
+
+  &--home::before{
+    background-image: url(images/HOME.png);
+  
+    @media(min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(images/HOME@2x.png);  
+    }
+  }
+
+  &--image::before{
+    background-image: url(images/IMAGE.png);
+  
+    @media(min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(images/IMAGE@2x.png);  
+    }
+  }
+}
+ 
+
+.services__item-title{
+  font-family: $main-Header-font-stack;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 14px;
+  color: $secondary-text-color;
+}
+  
+.services__item-text,
+.team__text{
+  font-family: $text-main-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px; 
+  color: $text-color;    
+}
