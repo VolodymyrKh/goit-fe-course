@@ -28,50 +28,50 @@
   }
 
   &--alarm::before{
-    background-image: url(../images/ALARM.png);
+    background-image: url(images/ALARM.png);
   
     @media(min-resolution: 192dpi), (min-resolution: 2dppx){
-      background-image: url(../images/ALARM@2x.png);  
+      background-image: url(images/ALARM@2x.png);  
     }
   }
 
   &--graph::before{
-    background-image: url(../images/LINE_GRAPH.png);
+    background-image: url(images/LINE_GRAPH.png);
   
     @media(min-resolution: 192dpi), (min-resolution: 2dppx){
-      background-image: url(../images/LINE_GRAPH@2x.png);  
+      background-image: url(images/LINE_GRAPH@2x.png);  
     }
   }
 
   &--computer::before{
-    background-image: url(../images/COMPUTER.png);
+    background-image: url(images/COMPUTER.png);
   
     @media(min-resolution: 192dpi), (min-resolution: 2dppx){
-      background-image: url(../images/COMPUTER@2x.png);  
+      background-image: url(images/COMPUTER@2x.png);  
     }
   }
 
   &--book::before{
-    background-image: url(../images/BOOK.png);
+    background-image: url(images/BOOK.png);
   
     @media(min-resolution: 192dpi), (min-resolution: 2dppx){
-      background-image: url(../images/BOOK@2x.png);  
+      background-image: url(images/BOOK@2x.png);  
     }
   }
 
   &--home::before{
-    background-image: url(../images/HOME.png);
+    background-image: url(images/HOME.png);
   
     @media(min-resolution: 192dpi), (min-resolution: 2dppx){
-      background-image: url(../images/HOME@2x.png);  
+      background-image: url(images/HOME@2x.png);  
     }
   }
 
   &--image::before{
-    background-image: url(../images/IMAGE.png);
+    background-image: url(images/IMAGE.png);
   
     @media(min-resolution: 192dpi), (min-resolution: 2dppx){
-      background-image: url(../images/IMAGE@2x.png);  
+      background-image: url(images/IMAGE@2x.png);  
     }
   }
 }

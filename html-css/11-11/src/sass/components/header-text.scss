@@ -1,0 +1,35 @@
+.header-text{
+  text-align: center;
+}
+
+.template{
+  font-family: $exotic-font-stack;
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.welcome{
+  font-size: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 80px;  
+  margin-bottom: 110px;
+}
+   
+.more-info{
+  @extend %link;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border: 3px solid #fff;
+  transition: color 0.2s linear, border-color 0.2s linear;
+
+  &:hover,
+  &:focus{
+    color: $secondary-accent-color;
+    border-color: $secondary-accent-color;
+    outline: 0;
+  }
+}
+   

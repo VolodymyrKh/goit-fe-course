@@ -1,4 +1,23 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+@import 'normalize';
+@import 'helpers/base';
+
+// components
+
+@import 'components/button';
+@import 'components/wrapper';
+@import 'components/page-header';
+@import 'components/page-navigation';
+@import 'components/site-logo';
+@import 'components/site-navigation';
+@import 'components/header-text';
+@import 'components/section'; 
+@import 'components/services';
+@import 'components/team';
+@import 'components/socials';
+@import 'components/page-footer';

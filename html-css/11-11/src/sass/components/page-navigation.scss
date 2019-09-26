@@ -1,0 +1,11 @@
+.page-navigation{
+  @include center-flex('ver');
+  // display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.page-navigation__site-navigation{
+  width: 620px;
+}

@@ -446,7 +446,7 @@ p {
 }
 
 .page-header {
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.8), rgba(243, 129, 129, 0.8)), url(../images/Eagle.jpg);
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.8), rgba(243, 129, 129, 0.8)), url(images/Eagle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 26px;
@@ -625,27 +625,27 @@ p {
 }
 
 .services__icon--alarm::before {
-  background-image: url(../images/ALARM.png);
+  background-image: url(images/ALARM.png);
 }
 
 .services__icon--graph::before {
-  background-image: url(../images/LINE_GRAPH.png);
+  background-image: url(images/LINE_GRAPH.png);
 }
 
 .services__icon--computer::before {
-  background-image: url(../images/COMPUTER.png);
+  background-image: url(images/COMPUTER.png);
 }
 
 .services__icon--book::before {
-  background-image: url(../images/BOOK.png);
+  background-image: url(images/BOOK.png);
 }
 
 .services__icon--home::before {
-  background-image: url(../images/HOME.png);
+  background-image: url(images/HOME.png);
 }
 
 .services__icon--image::before {
-  background-image: url(../images/IMAGE.png);
+  background-image: url(images/IMAGE.png);
 }
 
 .services__item-title {
@@ -884,30 +884,30 @@ p {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-header {
-    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.8), rgba(243, 129, 129, 0.8)), url(../images/Eagle@2x.jpg);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.8), rgba(243, 129, 129, 0.8)), url(images/Eagle@2x.jpg);
   }
 
   .services__icon--alarm::before {
-    background-image: url(../images/ALARM@2x.png);
+    background-image: url(images/ALARM@2x.png);
   }
 
   .services__icon--graph::before {
-    background-image: url(../images/LINE_GRAPH@2x.png);
+    background-image: url(images/LINE_GRAPH@2x.png);
   }
 
   .services__icon--computer::before {
-    background-image: url(../images/COMPUTER@2x.png);
+    background-image: url(images/COMPUTER@2x.png);
   }
 
   .services__icon--book::before {
-    background-image: url(../images/BOOK@2x.png);
+    background-image: url(images/BOOK@2x.png);
   }
 
   .services__icon--home::before {
-    background-image: url(../images/HOME@2x.png);
+    background-image: url(images/HOME@2x.png);
   }
 
   .services__icon--image::before {
-    background-image: url(../images/IMAGE@2x.png);
+    background-image: url(images/IMAGE@2x.png);
   }
 }
